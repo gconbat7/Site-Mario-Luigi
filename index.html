@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Mario-Luigi</title>
+</head>
+<body>
+
+    <div class="mascara-form" onclick="esconderForm()"></div>
+
+    <div class="header">
+        <img src="./assets/logo-header.png">
+        <a href="home.html">Home</a>
+        <a href="nossos-servicos.html">Nossos Serviços</a>
+        <a href="fale-conosco.html">Fale Conosco</a>
+    </div>
+
+    <div class="caixa-mae">
+
+        <div class="sobre">
+            <img src="assets/logo.png" alt="Logo do Mario e Luigi" class="logo-mario">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cumque sunt perspiciatis repellat culpa asperiores delectus itaque corporis quae minima ea, facere.
+                commodi illum doloribus numquam molestias temporibus nisi voluptates? Eos!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <button onclick="mostrarForm()">Entre em contato</button>
+
+        </div>
+
+        <div>
+            <img src="assets/mario.png" alt="Logo Mario e Luigi" class="img-mario-luigi">
+        </div>
+    </div>      
+    
+    <!--Tag para adicionar vídeo-->
+    <div class="caixa-video">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <!--Site gerador de link para Whatsapp-->
+    <a href="https://wa.me/5511992898083?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20a%20equipe%20G7." class="link-zap">
+        <img src="./assets/whatsapp.png" alt="Link whatsapp">
+    </a>
+
+    <form 
+        class="form-fale-conosco" action="https://formcarry.com/s/BP_dm7mFIGt"
+        method="POST"
+        enctype="multipart/form-data">
+            <input placeholder="Seu Nome" type="text" name="nome">
+            <input placeholder="Seu E-mail" type="text" name="email">
+            <input placeholder="Seu Telefone" type="tel" name="telefone">
+            <textarea placeholder="Digite seu problema aqui!" name="duvida"></textarea>
+            <button class="btn-orcamento" type="submit">Solicitar Orçamento</button>
+    </form>
+</body>
+
+<script src="JS/script.js"></script>
+</html>
